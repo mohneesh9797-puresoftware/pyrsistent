@@ -218,8 +218,8 @@ install:
   - ${PIP} install -r requirements.txt
 script:
   - tox
-  - git stash --all # Restore fresh checkout
-  - cibuildwheel --output-dir dist
+  #- git stash --all # Restore fresh checkout
+  #- cibuildwheel --output-dir dist
 # deployment can be added like:
 #
 # deploy:
